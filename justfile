@@ -5,7 +5,7 @@ alias dist := package
 # Create unsigneed extension archive
 package VER="v1":
     [ -e {{justfile_directory()}}/dist ]  || mkdir {{justfile_directory()}}/dist
-    zip -r -FS {{justfile_directory()}}/dist/GruvboxDarkThemeFirefoxPluskMiku-{{VER}}.zip {{justfile_directory()}}/* --exclude '*.git*' --exclude '*.mp4' --exclude '*~' --exclude 'dist' --exclude 'justfile'
+    cd {{justfile_directory()}} && zip -r -FS dist/GruvboxDarkThemeFirefoxPluskMiku-{{VER}}.zip * --exclude '*.git*' --exclude '*.mp4' --exclude '*~' --exclude 'dist' --exclude 'justfile'
 
 # Push the code to all remotes
 push FLAGS="-u" BRANSH="aurora":
