@@ -3,7 +3,7 @@
 alias dist := package
 
 # Create unsigneed extension archive
-package VER="v1":
+package VER="v1.1":
     [ -e {{justfile_directory()}}/dist ]  || mkdir {{justfile_directory()}}/dist
     cd {{justfile_directory()}} && zip -r -FS dist/GruvboxDarkThemeFirefoxPlusMiku-{{VER}}.zip * --exclude '*.git*' --exclude '*.mp4' --exclude '*~' --exclude 'dist*' --exclude 'justfile' --exclude 'prev.png'
 
