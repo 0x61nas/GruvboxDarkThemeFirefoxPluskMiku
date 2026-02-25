@@ -2,6 +2,8 @@
 
 Its a Gruvbox hard dark theme with Hatsune Miku inside :3
 
+![Preview](./prev.png)
+
 Based on [GruvboxDarkFirefoxTheme][base].
 
 
