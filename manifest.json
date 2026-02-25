@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Gruvbox Dark Miku",
-	"description": "Gruvbox dark theme for Firefox With Hatsune Miku inside.",
+	"description": "Gruvbox dark theme for Firefox With Hatsune Miku watching you.",
 	"version": "1.0",
 	"theme": {
         "images": {
